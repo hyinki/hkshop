@@ -1,17 +1,9 @@
 import express from "express";
 const router = express.Router();
-import products from '../data/products.js';
+import {getProducts, getProductsById} from '../controllers/productController.js'
 
+router.route('/').get(getProducts);
+router.route('/:id').get(getProductsById);
 
-router.get('/', async (req, res)=> {
-    res.json(products);
-    
-})
-
-router.get('/:id', (req, res) => {
-    //const product=products.find((p)=> p._id===req.params.id)
-    const product = products.find((p) => p._id === req.params.id);
-    res.json(product);
-})
 
 export default router;
