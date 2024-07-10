@@ -76,3 +76,19 @@ main {
   height: 300px; /* Adjust the image height as needed */
   object-fit: cover; /* Ensure the image covers the specified height */
 }
+
+.custom-button {
+  background-color:  #654762; /* Change this to your desired color */
+  border-color:  #654762; /* Ensure the border matches the background */
+  
+}
+
+.custom-button:hover {
+  background-color: black;/* Change this to your desired hover color */
+  border-color: #654762;
+}
+
+.custom-button:focus {
+  background-color: red; 
+  border-color: red;
+}
