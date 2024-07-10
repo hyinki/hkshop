@@ -88,7 +88,22 @@ main {
   border-color: #654762;
 }
 
-.custom-button:focus {
+.custom-button:active {
   background-color: red; 
   border-color: red;
+}
+
+.ca{
+  max-height: 500px; /* Set the maximum height as needed */
+  overflow: hidden;
+}
+
+.checkoutname{
+  text-decoration: none;
+  color: #B39BB5;
+}
+
+.checkoutname:hover{
+  color: black;
+ 
 }
