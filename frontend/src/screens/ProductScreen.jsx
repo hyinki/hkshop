@@ -10,7 +10,7 @@ import {
     Button,
     Form
   } from 'react-bootstrap';
-import { Toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
 import Rating from '../components/Rating'; 
 import React from 'react'
