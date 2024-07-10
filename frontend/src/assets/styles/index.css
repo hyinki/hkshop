@@ -51,3 +51,28 @@ main {
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
   }
+
+  .product-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .product-link:hover {
+    text-decoration: none;
+    color:#654762;
+  }
+
+  .header{
+    background-color: #654762;
+  }
+
+  .product-card {
+    max-height: 600px; /* Adjust the height as needed */
+    overflow: hidden;
+  }
+
+
+.product-card img {
+  height: 300px; /* Adjust the image height as needed */
+  object-fit: cover; /* Ensure the image covers the specified height */
+}

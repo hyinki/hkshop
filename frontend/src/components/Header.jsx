@@ -4,6 +4,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate, Link } from 'react-router-dom';
 import { useLogoutMutation } from '../slices/usersApiSlice';
 import { logout } from '../slices/authSlice';
+import SearchBox from './SearchBox';
+import '../assets/styles/index.css'
 //import logo from '../assets/logo.png';
 //import { resetCart } from '../slices/cartSlice';
 
@@ -28,15 +30,15 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar bg='primary' variant='dark' expand='lg' collapseOnSelect>
+      <Navbar className='header' variant='dark' expand='lg' collapseOnSelect >
         <Container>
           <Navbar.Brand as={Link} to='/'>
-            shop
+            hkshop
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='ms-auto'>
-             
+             <SearchBox></SearchBox>
               <Nav.Link as={Link} to='/cart'>
                 <FaShoppingCart /> Cart
                 {cartItems.length > 0 && (

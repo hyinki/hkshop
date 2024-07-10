@@ -83,12 +83,12 @@ const ProductScreen = () => {
             <ListGroup.Item>
                   <h3>{product.name}</h3>
                 </ListGroup.Item>
-                <ListGroup.Item>
+                {/* <ListGroup.Item>
                   <Rating
                     value={product.rating}
                     text={`${product.numReviews} reviews`}
                   />
-                </ListGroup.Item>
+                </ListGroup.Item> */}
                 <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
                 <ListGroup.Item>
                   Description: {product.description}
@@ -155,7 +155,7 @@ const ProductScreen = () => {
 
      </Row> 
 
-     <Row className='review'>
+     {/* <Row className='review'>
           <Col md={6}>
             <h2>Reviews</h2>
             {product.reviews.length === 0 && <Message>No Reviews</Message>}
@@ -221,7 +221,7 @@ const ProductScreen = () => {
               </ListGroup>
           </Col>
 
-     </Row>
+     </Row> */}
      </>
      )}
      
