@@ -20,7 +20,7 @@
 
 // src/components/Footer.js
 import React from 'react';
-import { Container, Row, Col, Nav } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import '../assets/styles/index.css'
 
 const Footer = () => {
@@ -38,9 +38,9 @@ const Footer = () => {
             </Nav>
           </Col> */}
           <Col md={4}>
-            <h5>Contact Me</h5>
+            {/* <h5>Contact Me</h5>
             <p>Email: pang_hyin_ki@yahoo.com.sg</p>
-            <p>Phone: +123 456 7890</p>
+            <p>Phone: +123 456 7890</p> */}
           </Col>
           <Col md={2}></Col>
         </Row>
