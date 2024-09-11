@@ -13,7 +13,7 @@ import Meta from '../components/Meta';
 import { useGetProductsQuery } from '../slices/productApiSlice';
 
 const HomeScreen = () => {
-  const { pageNumber, keyword } = useParams();
+  const {  keyword } = useParams();
 
   const { data, isLoading, error } = useGetProductsQuery({ keyword, pageNumber: 1 });
 
